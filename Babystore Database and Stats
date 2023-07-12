@@ -1,0 +1,23 @@
+--Create a babystore database
+
+CREATE TABLE babystore (id INTEGER PRIMARY Key, name TEXT, quantity INTEGER, aisle INTEGER, price INTEGER);
+
+INSERT INTO babystore VALUES (1, "Bottles", 10, 1, 12);
+INSERT INTO babystore VALUES (2, "Formula", 30, 2, 35);
+INSERT INTO babystore VALUES (3, "Bibs", 25, 3, 6);
+INSERT INTO babystore VALUES (4, "pacifiers", 10, 4, 5);
+INSERT INTO babystore VALUES (5, "socks", 25, 3, 6);
+INSERT INTO babystore VALUES (6, "Teethers", 14, 4, 2);
+INSERT INTO babystore VALUES (7, "Cereal", 8, 2, 10);
+INSERT INTO babystore VALUES (8, "Onesies", 50, 3, 9);
+INSERT INTO babystore VALUES (9, "Toys", 17, 6, 40);
+INSERT INTO babystore VALUES (10, "bathtub", 8, 9, 15);
+INSERT INTO babystore VALUES (11, "Babysoap", 9, 9, 7);
+INSERT INTO babystore VALUES (12, "Washcloth", 6, 9, 4);
+INSERT INTO babystore VALUES (13, "Sleepsack", 50, 3, 20);
+INSERT INTO babystore VALUES (14, "Crib", 8, 6, 200);
+INSERT INTO babystore VALUES (15, "Stroller", 9, 6, 300);
+
+--Display database where aisle is greater than 5 and order is by Price.
+SELECT * FROM babystore WHERE aisle > 5 ORDER BY Price;
+
